@@ -28,9 +28,11 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
-body, main {
+body,
+main {
   min-height: 100vh;
   min-width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
@@ -56,12 +58,10 @@ img {
 .nft-img-container {
   display: flex;
   position: relative;
-  width: 278px;
-  height: 278px;
 }
 
 .nft-img-container,
-.equilibrium-img, 
+.equilibrium-img,
 .overlay {
   width: 278px;
   height: 278px;
@@ -171,4 +171,46 @@ a.creator:hover .name {
   color: var(--cyan);
 }
 
+@media (min-width: 1440px) {
+  
+  section {
+    width: 21.875rem;
+    height: 37.25rem;
+    padding: 24px 27px 32px 24px;
+  }
 
+  .nft-img-container,
+  .equilibrium-img,
+  .overlay {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+  }
+
+  a.equilibrium-link {
+    margin-top: 25px;
+    margin-bottom: 16px;
+    line-height: 1.75rem;
+  }
+
+  .price-time-container {
+    padding: 24px 0px;
+  }
+
+  .bid-price,
+  .time-remaining {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .time-remaining img {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+  }
+
+  .creator {
+    font-size: 1rem;
+  }
+
+}
